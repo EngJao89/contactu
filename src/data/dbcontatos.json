@@ -1,0 +1,25 @@
+{
+  "wscontatos": [
+    {
+      "id": 1,
+      "nome": "Gerson Pestana",
+      "telefone": "2234-2234",
+      "email": "gerson@mail.com",
+      "sexo": "MASCULINO"
+    },
+    {
+      "id": 3,
+      "nome": "Adilson Campos",
+      "telefone": "95847-0000",
+      "email": "didi@mail.com",
+      "sexo": "MASCULINO"
+    },
+    {
+      "nome": "Renato Goes",
+      "telefone": "99857-8574",
+      "email": "renato@cap.com.br",
+      "sexo": "MASCULINO",
+      "id": 4
+    }
+  ]
+}

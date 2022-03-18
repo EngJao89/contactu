@@ -1,0 +1,16 @@
+.form-container {
+  border-style: solid;
+  border-radius: 5px;
+  padding-bottom: 25px;
+}
+.form-camp{
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.form-camp-input{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
