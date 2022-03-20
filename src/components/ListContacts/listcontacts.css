@@ -1,0 +1,29 @@
+.list-container{
+  width: 100%;
+  margin-top: 15px;
+}
+.list-item{
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-style: groove;
+}
+.change-button{
+  color: #255999;
+  margin-top: 10px;
+  border: 0;
+  background-color: transparent;
+}
+.change-button:hover{
+  color: #fff;
+  background-color: #255999;
+}
+.exc-button{
+  color: #FF0000;
+  border: 0;
+  background-color: transparent;
+}
+.exc-button:hover{
+  color: #FF0000;
+  background-color: #000;
+}

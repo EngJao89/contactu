@@ -1,8 +1,8 @@
 .navbar{
-  background-color:rgb(21, 75, 14);
+  background-color:rgb(54, 5, 94);
   border-bottom: 1px solid #615151;
   border-radius: 0;
-  box-shadow: 0 1px 4px rgb(21, 75, 14);
+  box-shadow: 0 1px 4px rgb(54, 5, 94);
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -18,10 +18,10 @@
   width: 250px;
   font-weight: bold;
   display: flex;
-  background-color:rgb(21, 75, 14);
+  background-color:rgb(54, 5, 94);
 }
 .container {
-  background-color:rgb(21, 75, 14);
+  background-color:rgb(54, 5, 94);
   border-radius: 15px;
   height: 100%;
   margin-right: 14px;
@@ -29,8 +29,8 @@
   align-items: center;
 }
 .menu-link {
-  color: #000;
-  background-color:rgb(21, 75, 14);
+  color: #FFF;
+  background-color:rgb(54, 5, 94);
   padding: 12px 24px;
   border-radius: 4px;
 }

@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ws" : "json-server ./src/data/dbcontatos.json --port 3200"
+    "ws": "json-server ./src/data/dbcontatos.json --port 3200"
   },
   "eslintConfig": {
     "extends": [
