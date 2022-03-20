@@ -1,3 +1,6 @@
+.form-header{
+  padding-top: 25px;
+}
 .form-container {
   border-style: solid;
   border-radius: 5px;
@@ -13,4 +16,12 @@
   display: flex;
   align-items: center;
   flex: 1;
+}
+.adc-button{
+  border-radius: 5px;
+  background-color: #255999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 13%;
+  height: 40px;
 }

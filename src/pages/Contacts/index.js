@@ -6,7 +6,6 @@ export default function Contacts() {
   return (
     <div>
       <Menu />
-      <h1>Contatos</h1>
       <FormContacts />
     </div>
   );
