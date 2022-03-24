@@ -1,9 +1,36 @@
-import React from 'react';
+import React,{ useState, useEffect } from 'react';
 import { RiContactsBook2Fill } from 'react-icons/ri';
 import { RiContactsFill } from 'react-icons/ri';
+import api from '../../services/api';
 import './formcontacts.css';
 
 export default function FormContacts() {
+  const [codigo, setCodigo] = useState('');
+  const [descricao, setDescricao] = useState('');
+  const [unidade, setUnidade] = useState('');
+  const [preco, setPreco] = useState('');
+  const [categoria, setCategoria] = useState('');
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const data = {
+      codigo,
+      descricao,
+      unidade,
+      preco,
+      categoria,
+    };
+
+    try {
+      await api.post('/produtos/create', data);
+
+      alert('Produto cadastrado com sucesso!');
+    } catch (error) {
+      alert('Erro ao cadastrar produto, tente novamente.');
+    }
+  }
+
   return (
     <div className="form-header">
       <RiContactsFill size={80} />
