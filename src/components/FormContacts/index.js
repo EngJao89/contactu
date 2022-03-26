@@ -5,25 +5,23 @@ import api from '../../services/api';
 import './formcontacts.css';
 
 export default function FormContacts() {
-  const [codigo, setCodigo] = useState('');
-  const [descricao, setDescricao] = useState('');
-  const [unidade, setUnidade] = useState('');
-  const [preco, setPreco] = useState('');
-  const [categoria, setCategoria] = useState('');
+  const [nome, setNome] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [email, setEmail] = useState('');
+  const [sexo, setSexo] = useState('');
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     const data = {
-      codigo,
-      descricao,
-      unidade,
-      preco,
-      categoria,
+      nome,
+      telefone,
+      email,
+      sexo,
     };
 
     try {
-      await api.post('/produtos/create', data);
+      await api.post('/contacts/create', data);
 
       alert('Produto cadastrado com sucesso!');
     } catch (error) {
