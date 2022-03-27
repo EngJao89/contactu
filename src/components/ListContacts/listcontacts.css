@@ -2,11 +2,20 @@
   width: 100%;
   margin-top: 15px;
 }
-.list-item{
+.card-item{
+  background-color: #24282e;
+  color: #FFF;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: inline-block;
   padding: 20px;
   border-style: groove;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  width: 40%;
+  vertical-align: middle;
 }
 .change-button{
   color: #255999;
@@ -25,5 +34,5 @@
 }
 .exc-button:hover{
   color: #FF0000;
-  background-color: #000;
+  background-color: rgb(56, 52, 34);
 }
