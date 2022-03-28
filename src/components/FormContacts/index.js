@@ -34,67 +34,46 @@ export default function FormContacts() {
       <RiContactsFill size={80} />
       <h1>Moog Agenda</h1>
       <div className="form-container">
-        <RiContactsBook2Fill size={30}/>
-        <h3>Cadastro de Contatos</h3>
-        <form>
-          <div className="form-camp">
-            <label for="nome" className="col-sm-3 col-form-label">Nome:</label>
-              <div className="col-sm-5 col-6">
-                <input type="text" className="form-control" id="nome"
-                  name="nome"
-                  //value={state.nome}
-                  //onChange={this.alterarDados} 
-                />
-              </div>
-          </div>
+        <section>
+          <RiContactsBook2Fill size={30}/>
+          <h3>Cadastro de Contatos</h3>
+          <form>
+            <input 
+              className="form-campo"
+              placeholder="Nome"
+              value={nome}
+              onChange={e => setNome(e.target.value)}
+            />
 
-          <div className="form-camp">
-            <label for="telefone" className="form-camp-input">Telefone:</label>
-              <div className="col-sm-5 col-6">
-                <input type="text" className="form-control" id="telefone"
-                  name="telefone"
-                  //value={state.telefone}
-                  //onChange={this.alterarDados} 
-                />
-              </div>
-          </div>
+            <input 
+              className="form-campo"
+              placeholder="Telefone"
+              value={telefone}
+              onChange={e => setTelefone(e.target.value)} 
+            />
 
-          <div className="form-camp">
-            <label for="email" className="form-camp-input">Email:</label>
-              <div className="col-sm-5 col-6">
-                <input type="text" className="form-control" id="email"
-                  name="email"
-                  //value={state.email}
-                  //onChange={this.alterarDados} 
-                />
-              </div>
-          </div>
+            <input 
+              className="form-campo"
+              placeholder="Email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+            />
 
-          <div className="form-camp">
-            <label for="sexo" className="form-camp-input">Sexo:</label>
-              <div className="col-sm-6 col-6">
-                <select className="form-control" 
-                  id="sexo" 
-                  name="sexo"
-                  //value={state.sexo}
-                  //onChange={this.alterarDados}                             
-                >
-                  <option>MASCULINO</option>
-                  <option>FEMININO</option>
-                </select>
-              </div>
-          </div>
+            <input 
+              className="form-campo"
+              placeholder="Sexo"
+              value={sexo}
+              onChange={e => setSexo(e.target.value)}
+            />
 
-          <div className="form-camp">
-            <button
-              className="adc-button"
-              //onClick={this.incluirContato}
-            >
-              Adicionar
+            <button 
+              className="form-button"
+              onClick={handleSubmit}
+              >
+              Cadastrar Contato
             </button>
-          </div>
-
-        </form>
+          </form>
+        </section>
       </div>
     </div>
   );

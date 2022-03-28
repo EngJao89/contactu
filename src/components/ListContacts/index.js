@@ -41,20 +41,12 @@ export default function ListContacts() {
         <RiContactsFill size={80}/>
         <h2>Lista de Contatos</h2>
         {contacts.map(contacts => (
-          <div key={contacts._id} className="list-item" onClick={ () => handleOpenContacts(contacts)}>
+          <div key={contacts._id} className="card-item" onClick={ () => handleOpenContacts(contacts)}>
             <IoMdContact size={20}/>
-            <div>
-              <span><strong>Nome: </strong>{contacts.nome}</span>
-            </div>
-            <div>
-              <span><strong>Email: </strong>{contacts.email}</span>
-            </div>
-            <div>
-              <span><strong>Telefone: </strong>{contacts.telefone}</span>
-            </div>
-            <div>
-              <span><strong>Sexo: </strong>{contacts.sexo}</span>
-            </div>
+              <h5><strong>Nome: </strong>{contacts.nome}</h5>
+              <h5><strong>Telefone: </strong>{contacts.telefone}</h5>
+              <h5><strong>Email: </strong>{contacts.email}</h5>
+              <h5><strong>Sexo: </strong>{contacts.sexo}</h5>
             <button className="change-button">
               <FiEdit size={20} />
             </button>

@@ -5,23 +5,41 @@
   border-style: solid;
   border-radius: 5px;
   padding-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
 }
-.form-camp{
-  margin-bottom: 10px;
-  display: flex;
-  flex-flow: column;
+.form-campo{
+  border: 0;
+  width: 50%;
+  min-width: 80%;
+  border-radius: 4px;
+  flex-direction: row;
+  height: 46px;
+  margin-right: 14px;
+  margin-top: 30px;
+  display: inline-block;
   align-items: center;
+  padding: 0 14px;
+  font-size: 18px;
+  background-color: #383846;
+  color: #FFF;
 }
 .form-camp-input{
   display: flex;
   align-items: center;
   flex: 1;
 }
-.adc-button{
-  border-radius: 5px;
-  background-color: #255999;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 13%;
-  height: 40px;
+.form-button{
+  border: 0;
+  width: 50%;
+  border-radius: 4px;
+  height: 46px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1d1868;
+  color: #FFF;
 }
